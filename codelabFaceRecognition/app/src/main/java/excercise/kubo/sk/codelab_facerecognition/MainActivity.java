@@ -1,6 +1,7 @@
 package excercise.kubo.sk.codelab_facerecognition;
 
 import android.app.AlertDialog;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
@@ -21,19 +22,45 @@ import com.google.android.gms.vision.face.FaceDetector;
 
 public class MainActivity extends AppCompatActivity {
 
+    private ImageView myImageView;
+    private Paint myRectPaint;
+    private BitmapFactory.Options options;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
 
+        myImageView = findViewById(R.id.image_view);
+        options = new BitmapFactory.Options();
+        options.inMutable=true;
+
+        myRectPaint = new Paint();
+        myRectPaint.setStrokeWidth(5);
+        myRectPaint.setColor(Color.RED);
+        myRectPaint.setStyle(Paint.Style.STROKE);
+
+
+
+        Button bCamera = findViewById(R.id.button_camera);
+        bCamera.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startCamera();
+            }
+        });
 
         Button btn = findViewById(R.id.button);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-
+                Bitmap myBitmap = BitmapFactory.decodeResource(
+                        getApplicationContext().getResources(),
+                        R.drawable.photo,
+                        options);
 
                 FaceDetector faceDetector = new
                         FaceDetector.Builder(getApplicationContext()).setTrackingEnabled(false)
@@ -44,49 +71,31 @@ public class MainActivity extends AppCompatActivity {
                 }
 
 
+
+                Bitmap tempBitmap = Bitmap.createBitmap(myBitmap.getWidth(), myBitmap.getHeight(), Bitmap.Config.RGB_565);
+                Canvas tempCanvas = new Canvas(tempBitmap);
+                tempCanvas.drawBitmap(myBitmap, 0, 0, null);
+
+                Frame frame = new Frame.Builder().setBitmap(myBitmap).build();
+                SparseArray<Face> faces = faceDetector.detect(frame);
+
+
+                for(int i=0; i<faces.size(); i++) {
+                    Face thisFace = faces.valueAt(i);
+                    float x1 = thisFace.getPosition().x;
+                    float y1 = thisFace.getPosition().y;
+                    float x2 = x1 + thisFace.getWidth();
+                    float y2 = y1 + thisFace.getHeight();
+                    tempCanvas.drawRoundRect(new RectF(x1, y1, x2, y2), 2, 2, myRectPaint);
+                }
+                myImageView.setImageDrawable(new BitmapDrawable(getResources(),tempBitmap));
+
             }
         });
+    }
 
-        ImageView myImageView = findViewById(R.id.image_view);
-        BitmapFactory.Options options = new BitmapFactory.Options();
-        options.inMutable=true;
-
-        Bitmap myBitmap = BitmapFactory.decodeResource(
-                getApplicationContext().getResources(),
-                R.drawable.photo,
-                options);
-
-
-        Paint myRectPaint = new Paint();
-        myRectPaint.setStrokeWidth(5);
-        myRectPaint.setColor(Color.RED);
-        myRectPaint.setStyle(Paint.Style.STROKE);
-
-
-        Bitmap tempBitmap = Bitmap.createBitmap(myBitmap.getWidth(), myBitmap.getHeight(), Bitmap.Config.RGB_565);
-        Canvas tempCanvas = new Canvas(tempBitmap);
-        tempCanvas.drawBitmap(myBitmap, 0, 0, null);
-
-
-
-
-
-
-
-        Frame frame = new Frame.Builder().setBitmap(myBitmap).build();
-        SparseArray<Face> faces = faceDetector.detect(frame);
-
-
-
-        for(int i=0; i<faces.size(); i++) {
-            Face thisFace = faces.valueAt(i);
-            float x1 = thisFace.getPosition().x;
-            float y1 = thisFace.getPosition().y;
-            float x2 = x1 + thisFace.getWidth();
-            float y2 = y1 + thisFace.getHeight();
-            tempCanvas.drawRoundRect(new RectF(x1, y1, x2, y2), 2, 2, myRectPaint);
-        }
-        myImageView.setImageDrawable(new BitmapDrawable(getResources(),tempBitmap));
-
+    private void startCamera(){
+        Intent intent = new Intent(this, CameraActivity.class);
+        startActivity(intent);
     }
 }

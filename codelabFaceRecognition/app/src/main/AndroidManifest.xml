@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="excercise.kubo.sk.codelab_facerecognition">
 
+    <uses-permission android:name="android.permission.CAMERA"></uses-permission>
+
     <meta-data
         android:name="com.google.android.gms.vision.DEPENDENCIES"
         android:value="face" />
@@ -20,6 +22,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".CameraActivity"></activity>
     </application>
 
 </manifest>
