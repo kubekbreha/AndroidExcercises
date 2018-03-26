@@ -11,7 +11,6 @@ import java.io.IOException;
 /**
  * Created by kubek on 3/25/2018.
  */
-
 public class ShowCamera extends SurfaceView implements SurfaceHolder.Callback {
 
     private Camera camera;
@@ -26,16 +25,6 @@ public class ShowCamera extends SurfaceView implements SurfaceHolder.Callback {
 
     @Override
     public void surfaceCreated(SurfaceHolder holder) {
-
-    }
-
-    @Override
-    public void surfaceChanged(SurfaceHolder holder, int format, int width, int height) {
-
-    }
-
-    @Override
-    public void surfaceDestroyed(SurfaceHolder holder) {
         Camera.Parameters parameters = camera.getParameters();
 
         if (this.getResources().getConfiguration().orientation != Configuration.ORIENTATION_LANDSCAPE) {
@@ -48,6 +37,8 @@ public class ShowCamera extends SurfaceView implements SurfaceHolder.Callback {
             parameters.setRotation(0);
         }
 
+        parameters.setFocusMode(Camera.Parameters.FOCUS_MODE_CONTINUOUS_PICTURE);
+
         camera.setParameters(parameters);
         try {
             camera.setPreviewDisplay(holder);
@@ -55,6 +46,16 @@ public class ShowCamera extends SurfaceView implements SurfaceHolder.Callback {
         } catch (IOException e){
             e.printStackTrace();
         }
+
+    }
+
+    @Override
+    public void surfaceChanged(SurfaceHolder holder, int format, int width, int height) {
+
+    }
+
+    @Override
+    public void surfaceDestroyed(SurfaceHolder holder) {
 
 
     }

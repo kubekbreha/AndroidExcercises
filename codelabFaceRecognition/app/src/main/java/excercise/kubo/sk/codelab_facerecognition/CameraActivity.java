@@ -3,6 +3,7 @@ package excercise.kubo.sk.codelab_facerecognition;
 import android.hardware.Camera;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.widget.FrameLayout;
 import android.widget.RelativeLayout;
 
@@ -10,7 +11,7 @@ import android.widget.RelativeLayout;
 public class CameraActivity extends AppCompatActivity {
 
     private Camera camera;
-    private RelativeLayout relativeLayout;
+    private FrameLayout frameLayout;
     private ShowCamera showCamera;
 
     @Override
@@ -18,16 +19,41 @@ public class CameraActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_camera);
-        relativeLayout.findViewById(R.id.frame);
+
+
+        frameLayout = findViewById(R.id.frame);
 
         //start camera
-        camera = Camera.open();
 
-        showCamera = new ShowCamera(this, camera);
+        try {
 
+            camera = Camera.open();
+            showCamera = new ShowCamera(this, camera);
+            frameLayout.addView(showCamera);
+
+        }catch (Exception e){
+            Log.e("Error", ""+e);
+        }
     }
 
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        if (camera != null) {
+            camera.stopPreview();
+            camera.release();
+            camera = null;
+        }
+    }
 
-
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (camera != null) {
+            camera.stopPreview();
+            camera.release();
+            camera = null;
+        }
+    }
 }
