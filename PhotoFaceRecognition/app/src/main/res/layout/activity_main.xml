@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="excercise.kubo.sk.codelab_facerecognition.MainActivity"
+    android:background="#616161">
+
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/button_process"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="16dp"
+        android:background="@drawable/round_button"
+        android:textColor="#fff"
+        android:paddingStart="16dp"
+        android:drawableStart="@drawable/ic_crop_square_white_24dp"/>
+
+
+    <Button
+        android:id="@+id/button_camera"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:background="@drawable/round_button"
+        android:textColor="#fff"
+        android:paddingStart="16dp"
+        android:drawableStart="@drawable/ic_camera_enhance_white_24dp"/>
+
+
+
+
+</RelativeLayout>
