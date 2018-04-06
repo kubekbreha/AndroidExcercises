@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/jakubbrehuv/Desktop/mfp-app-scaffolds-android (2)/MFPStarterAndroid/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-es-rUS/values-es-rUS.xml",
+            "outputFile": "/Users/jakubbrehuv/Documents/GitHub/AndroidExcercises/MFPStarterAndroid/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-es-rUS/values-es-rUS.xml",
             "map": [
                 {
                     "source": "/Users/jakubbrehuv/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/35857c750a77b130e8035c3057fe82d5/res/values-es-rUS/values-es-rUS.xml",

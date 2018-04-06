@@ -1,4 +1,4 @@
-#Fri Apr 06 19:05:14 CEST 2018
-base.0=/Users/jakubbrehuv/Desktop/mfp-app-scaffolds-android (2)/MFPStarterAndroid/app/build/intermediates/transforms/dexMerger/debug/8
+#Fri Apr 06 20:07:12 CEST 2018
+base.0=/Users/jakubbrehuv/Documents/GitHub/AndroidExcercises/MFPStarterAndroid/app/build/intermediates/transforms/dexMerger/debug/8
 path.0=classes.dex
 renamed.0=classes.dex

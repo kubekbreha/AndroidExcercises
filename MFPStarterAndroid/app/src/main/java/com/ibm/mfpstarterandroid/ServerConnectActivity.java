@@ -72,6 +72,7 @@ public class ServerConnectActivity extends AppCompatActivity implements OnClickL
                         e.printStackTrace();
                     }
 
+
                     WLResourceRequest request = new WLResourceRequest(adapterPath, WLResourceRequest.GET);
 
                     request.setQueryParameter("name","world");

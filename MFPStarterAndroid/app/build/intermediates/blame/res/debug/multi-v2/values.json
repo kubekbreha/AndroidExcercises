@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/jakubbrehuv/Desktop/mfp-app-scaffolds-android (2)/MFPStarterAndroid/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/Users/jakubbrehuv/Documents/GitHub/AndroidExcercises/MFPStarterAndroid/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
                 {
-                    "source": "/Users/jakubbrehuv/Desktop/mfp-app-scaffolds-android (2)/MFPStarterAndroid/app/src/main/res/values/styles.xml",
+                    "source": "/Users/jakubbrehuv/Documents/GitHub/AndroidExcercises/MFPStarterAndroid/app/src/main/res/values/styles.xml",
                     "from": {
                         "startLines": "3,15,10,17",
                         "startColumns": "4,4,4,4",
@@ -42,24 +42,7 @@
                     }
                 },
                 {
-                    "source": "/Users/jakubbrehuv/Desktop/mfp-app-scaffolds-android (2)/MFPStarterAndroid/app/src/main/res/values/strings.xml",
-                    "from": {
-                        "startLines": "2,5,4",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "17,146,73",
-                        "endColumns": "54,67,72",
-                        "endOffsets": "67,209,141"
-                    },
-                    "to": {
-                        "startLines": "216,217,218",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "28899,28954,29022",
-                        "endColumns": "54,67,72",
-                        "endOffsets": "28949,29017,29090"
-                    }
-                },
-                {
-                    "source": "/Users/jakubbrehuv/Desktop/mfp-app-scaffolds-android (2)/MFPStarterAndroid/app/src/main/res/values/dimens.xml",
+                    "source": "/Users/jakubbrehuv/Documents/GitHub/AndroidExcercises/MFPStarterAndroid/app/src/main/res/values/dimens.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",
@@ -76,7 +59,24 @@
                     }
                 },
                 {
-                    "source": "/Users/jakubbrehuv/Desktop/mfp-app-scaffolds-android (2)/MFPStarterAndroid/app/src/main/res/values/colors.xml",
+                    "source": "/Users/jakubbrehuv/Documents/GitHub/AndroidExcercises/MFPStarterAndroid/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "2,5,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "17,146,73",
+                        "endColumns": "54,67,72",
+                        "endOffsets": "67,209,141"
+                    },
+                    "to": {
+                        "startLines": "216,217,218",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "28899,28954,29022",
+                        "endColumns": "54,67,72",
+                        "endOffsets": "28949,29017,29090"
+                    }
+                },
+                {
+                    "source": "/Users/jakubbrehuv/Documents/GitHub/AndroidExcercises/MFPStarterAndroid/app/src/main/res/values/colors.xml",
                     "from": {
                         "startLines": "4,2,3",
                         "startColumns": "4,4,4",

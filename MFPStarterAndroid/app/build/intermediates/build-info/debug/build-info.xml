@@ -6,8 +6,8 @@
     density="560dpi"
     format="10"
     plugin-version="3.1.0"
-    timestamp="1523037584782"
-    token="-2830884810061804852"
+    timestamp="1523039162269"
+    token="-4001716790744131218"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
@@ -23,70 +23,53 @@
         name="verifier"
         duration="0" />
 
-    <artifact
-        location="/Users/jakubbrehuv/Desktop/mfp-app-scaffolds-android (2)/MFPStarterAndroid/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
-        type="SPLIT_MAIN" />
-
     <build
         build-mode="FULL"
-        timestamp="1523034301977"
+        timestamp="1523038028702"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="/Users/jakubbrehuv/Desktop/mfp-app-scaffolds-android (2)/MFPStarterAndroid/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
+            location="/Users/jakubbrehuv/Documents/GitHub/AndroidExcercises/MFPStarterAndroid/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/jakubbrehuv/Desktop/mfp-app-scaffolds-android (2)/MFPStarterAndroid/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
+            location="/Users/jakubbrehuv/Documents/GitHub/AndroidExcercises/MFPStarterAndroid/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/jakubbrehuv/Desktop/mfp-app-scaffolds-android (2)/MFPStarterAndroid/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            location="/Users/jakubbrehuv/Documents/GitHub/AndroidExcercises/MFPStarterAndroid/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/jakubbrehuv/Desktop/mfp-app-scaffolds-android (2)/MFPStarterAndroid/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            location="/Users/jakubbrehuv/Documents/GitHub/AndroidExcercises/MFPStarterAndroid/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/jakubbrehuv/Desktop/mfp-app-scaffolds-android (2)/MFPStarterAndroid/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            location="/Users/jakubbrehuv/Documents/GitHub/AndroidExcercises/MFPStarterAndroid/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/jakubbrehuv/Desktop/mfp-app-scaffolds-android (2)/MFPStarterAndroid/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+            location="/Users/jakubbrehuv/Documents/GitHub/AndroidExcercises/MFPStarterAndroid/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/jakubbrehuv/Desktop/mfp-app-scaffolds-android (2)/MFPStarterAndroid/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            location="/Users/jakubbrehuv/Documents/GitHub/AndroidExcercises/MFPStarterAndroid/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/jakubbrehuv/Desktop/mfp-app-scaffolds-android (2)/MFPStarterAndroid/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+            location="/Users/jakubbrehuv/Documents/GitHub/AndroidExcercises/MFPStarterAndroid/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/jakubbrehuv/Desktop/mfp-app-scaffolds-android (2)/MFPStarterAndroid/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+            location="/Users/jakubbrehuv/Documents/GitHub/AndroidExcercises/MFPStarterAndroid/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/jakubbrehuv/Desktop/mfp-app-scaffolds-android (2)/MFPStarterAndroid/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            location="/Users/jakubbrehuv/Documents/GitHub/AndroidExcercises/MFPStarterAndroid/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/jakubbrehuv/Desktop/mfp-app-scaffolds-android (2)/MFPStarterAndroid/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+            location="/Users/jakubbrehuv/Documents/GitHub/AndroidExcercises/MFPStarterAndroid/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/jakubbrehuv/Desktop/mfp-app-scaffolds-android (2)/MFPStarterAndroid/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            location="/Users/jakubbrehuv/Documents/GitHub/AndroidExcercises/MFPStarterAndroid/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/jakubbrehuv/Desktop/mfp-app-scaffolds-android (2)/MFPStarterAndroid/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
+            location="/Users/jakubbrehuv/Documents/GitHub/AndroidExcercises/MFPStarterAndroid/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
             type="SPLIT_MAIN" />
     </build>
     <build
         build-mode="COLD"
-        ir-eligibility="CLASS_ADDED"
-        timestamp="1523035176289"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/Users/jakubbrehuv/Desktop/mfp-app-scaffolds-android (2)/MFPStarterAndroid/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
-            type="SPLIT" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1523037584782"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/Users/jakubbrehuv/Desktop/mfp-app-scaffolds-android (2)/MFPStarterAndroid/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
-            type="SPLIT_MAIN" />
-    </build>
+        timestamp="1523039162269"
+        verifier="COLD_SWAP_REQUESTED" />
 
 </instant-run>
