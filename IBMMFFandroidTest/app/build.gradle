@@ -1,5 +1,9 @@
 apply plugin: 'com.android.application'
 
+repositories{
+    jcenter()
+}
+
 android {
     compileSdkVersion 27
     defaultConfig {
@@ -16,6 +20,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    packagingOptions {
+        pickFirst 'META-INF/ASL2.0'
+        pickFirst 'META-INF/LICENSE'
+        pickFirst 'META-INF/NOTICE'
+    }
 }
 
 dependencies {
@@ -25,4 +34,10 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    implementation group: 'com.ibm.mobile.foundation',
+            name: 'ibmmobilefirstplatformfoundation',
+            version: '8.0.2018031911',
+            ext: 'aar',
+            transitive: true
 }
