@@ -9,16 +9,13 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
 
-    private Button button;
-    private TextView textView;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        button = findViewById(R.id.submit_button);
-        textView = findViewById(R.id.text_view);
+        Button button = findViewById(R.id.submit_button);
+        TextView textView = findViewById(R.id.text_view);
 
         button.setTransformationMethod(null);
         button.setOnClickListener(this);
