@@ -40,4 +40,8 @@ dependencies {
             version: '8.0.2018031911',
             ext: 'aar',
             transitive: true
+
+    implementation group: 'com.cloudant', name: 'cloudant-client', version: '2.12.0'
+    implementation group: 'com.squareup.okhttp3', name: 'okhttp-urlconnection', version: '3.9.0'
+
 }
