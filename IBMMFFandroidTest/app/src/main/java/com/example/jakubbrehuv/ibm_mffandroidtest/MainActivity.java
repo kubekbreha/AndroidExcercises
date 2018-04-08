@@ -15,6 +15,9 @@ import com.worklight.wlclient.api.WLClient;
 import com.worklight.wlclient.api.WLFailResponse;
 import com.worklight.wlclient.auth.AccessToken;
 
+import java.net.MalformedURLException;
+import java.net.URL;
+
 import okhttp3.MediaType;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -71,11 +74,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             });
 
         }else if(v.getId() == R.id.push_button){
-            CloudantClient client = ClientBuilder.account("Cloudant NoSQL DB-bi")
+            CloudantClient client = ClientBuilder.account("101cd02a-2daa-40b5-94a2-6f49790da45b-bluemix:6e78461ecad66b3816119f1cb23169852d7eb2ca16a139ee1d980f9ff43f31b7@101cd02a-2daa-40b5-94a2-6f49790da45b-bluemix")
                     .username("101cd02a-2daa-40b5-94a2-6f49790da45b-bluemix")
                     .password("6e78461ecad66b3816119f1cb23169852d7eb2ca16a139ee1d980f9ff43f31b7")
                     .build();
+
+            // Show the server version
             System.out.println("Server Version: " + client.serverVersion());
+
         }
     }
 
