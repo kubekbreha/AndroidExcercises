@@ -12,6 +12,22 @@
         "source": "/Users/jakubbrehuv/Desktop/sync-android-master/sample/todo-sync/res/layout/dialog_new_task.xml"
     },
     {
+        "merged": "/Users/jakubbrehuv/Documents/GitHub/AndroidExcercises/todo-sync/build/intermediates/res/merged/debug/layout/activity_todo.xml",
+        "source": "/Users/jakubbrehuv/Documents/GitHub/AndroidExcercises/todo-sync/res/layout/activity_todo.xml"
+    },
+    {
+        "merged": "/Users/jakubbrehuv/Documents/GitHub/AndroidExcercises/todo-sync/build/intermediates/res/merged/debug/layout/dialog_new_task.xml",
+        "source": "/Users/jakubbrehuv/Documents/GitHub/AndroidExcercises/todo-sync/res/layout/dialog_new_task.xml"
+    },
+    {
+        "merged": "/Users/jakubbrehuv/Documents/GitHub/AndroidExcercises/todo-sync/build/intermediates/res/merged/debug/layout/task_item.xml",
+        "source": "/Users/jakubbrehuv/Documents/GitHub/AndroidExcercises/todo-sync/res/layout/task_item.xml"
+    },
+    {
+        "merged": "/Users/jakubbrehuv/Documents/GitHub/AndroidExcercises/todo-sync/build/intermediates/res/merged/debug/layout/dialog_loading.xml",
+        "source": "/Users/jakubbrehuv/Documents/GitHub/AndroidExcercises/todo-sync/res/layout/dialog_loading.xml"
+    },
+    {
         "merged": "/Users/jakubbrehuv/Desktop/sync-android-master/sample/todo-sync/build/intermediates/res/merged/debug/layout/dialog_loading.xml",
         "source": "/Users/jakubbrehuv/Desktop/sync-android-master/sample/todo-sync/res/layout/dialog_loading.xml"
     }

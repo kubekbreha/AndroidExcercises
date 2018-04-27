@@ -54,10 +54,6 @@ public class TodoActivity
     private static final int DIALOG_NEW_TASK = 1;
     private static final int DIALOG_PROGRESS = 2;
 
-    static final String SETTINGS_CLOUDANT_USER = "0f036f24-a291-47d9-88ea-4af4755844b3-bluemix";
-    static final String SETTINGS_CLOUDANT_DB = "test_database";
-    static final String SETTINGS_CLOUDANT_API_KEY = "dityfationedistedistionv";
-    static final String SETTINGS_CLOUDANT_API_SECRET = "c09d099dccb02257b06fd10e4cc1b55c7c888bbf";
 
     // Main data model object
     private static TasksModel sTasks;
@@ -115,6 +111,7 @@ public class TodoActivity
         }
     }
 
+
     private void reloadTasksFromModel() {
         try {
             List<Task> tasks = this.sTasks.allTasks();
@@ -171,6 +168,7 @@ public class TodoActivity
         mTaskAdapter.notifyDataSetChanged();
     }
 
+
     /**
      * Called by TasksModel when it receives a replication complete callback.
      * TasksModel takes care of calling this on the main thread.
@@ -196,13 +194,14 @@ public class TodoActivity
         dismissDialog(DIALOG_PROGRESS);
     }
 
+
     //
     // EVENT HANDLING
     //
 
     @Override
     protected void onListItemClick(ListView l, View v, int position, long id) {
-        if(mActionMode != null) {
+        if (mActionMode != null) {
             mActionMode.finish();
         }
 

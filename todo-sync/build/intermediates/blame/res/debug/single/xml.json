@@ -2,5 +2,9 @@
     {
         "merged": "/Users/jakubbrehuv/Desktop/sync-android-master/sample/todo-sync/build/intermediates/res/merged/debug/xml/preferences.xml",
         "source": "/Users/jakubbrehuv/Desktop/sync-android-master/sample/todo-sync/res/xml/preferences.xml"
+    },
+    {
+        "merged": "/Users/jakubbrehuv/Documents/GitHub/AndroidExcercises/todo-sync/build/intermediates/res/merged/debug/xml/preferences.xml",
+        "source": "/Users/jakubbrehuv/Documents/GitHub/AndroidExcercises/todo-sync/res/xml/preferences.xml"
     }
 ]

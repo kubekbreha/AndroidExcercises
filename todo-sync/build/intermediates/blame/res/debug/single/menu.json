@@ -1,10 +1,18 @@
 [
     {
+        "merged": "/Users/jakubbrehuv/Documents/GitHub/AndroidExcercises/todo-sync/build/intermediates/res/merged/debug/menu/context_menu.xml",
+        "source": "/Users/jakubbrehuv/Documents/GitHub/AndroidExcercises/todo-sync/res/menu/context_menu.xml"
+    },
+    {
         "merged": "/Users/jakubbrehuv/Desktop/sync-android-master/sample/todo-sync/build/intermediates/res/merged/debug/menu/context_menu.xml",
         "source": "/Users/jakubbrehuv/Desktop/sync-android-master/sample/todo-sync/res/menu/context_menu.xml"
     },
     {
         "merged": "/Users/jakubbrehuv/Desktop/sync-android-master/sample/todo-sync/build/intermediates/res/merged/debug/menu/todo.xml",
         "source": "/Users/jakubbrehuv/Desktop/sync-android-master/sample/todo-sync/res/menu/todo.xml"
+    },
+    {
+        "merged": "/Users/jakubbrehuv/Documents/GitHub/AndroidExcercises/todo-sync/build/intermediates/res/merged/debug/menu/todo.xml",
+        "source": "/Users/jakubbrehuv/Documents/GitHub/AndroidExcercises/todo-sync/res/menu/todo.xml"
     }
 ]

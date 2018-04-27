@@ -78,6 +78,7 @@ public class Task {
         return "{ desc: " + getDescription() + ", completed: " + isCompleted() + "}";
     }
 
+
     public static Task fromRevision(DocumentRevision rev) {
         Task t = new Task();
         t.rev = rev;
