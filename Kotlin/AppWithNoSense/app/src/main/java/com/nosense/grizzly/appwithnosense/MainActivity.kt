@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
 
                 textView_progress.animate().translationY(translationDistance)
 
-                if(!fromUser) 
+                if(!fromUser)
                     textView_progress.animate().setDuration(500).rotationBy(360f).translationY(initialTextTranslationY)
 
             }
