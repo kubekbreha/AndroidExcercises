@@ -3,10 +3,12 @@
 
     <item
         android:id="@+id/menu_1"
-        android:title="Menu 1" />
+        android:title="Menu 1"
+        android:icon="@drawable/ic_more_vert"/>
 
     <item
         android:id="@+id/menu_2"
-        android:title="Menu 2" />
+        android:title="Menu 2"
+        android:icon="@drawable/ic_more_vert"/>
 
 </menu>

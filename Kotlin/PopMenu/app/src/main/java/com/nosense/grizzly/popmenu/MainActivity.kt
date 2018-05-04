@@ -5,6 +5,7 @@ import android.net.Uri
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.PopupMenu
+import android.util.Log
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -19,7 +20,7 @@ class MainActivity : AppCompatActivity() {
             popupMenu.setOnMenuItemClickListener { item ->
                 when (item.itemId){
                     R.id.menu_1 -> {
-                        val intent = Intent(Intent.ACTION_VIEW, Uri.parse("google.com"))
+                        val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.sk/"))
                         startActivity(intent)
                         true
                     }
@@ -32,6 +33,20 @@ class MainActivity : AppCompatActivity() {
             }
 
             popupMenu.inflate(R.menu.menu_main)
+
+            try{
+                val fieldMPopup = PopupMenu::class.java.getDeclaredField("mPopup")
+                fieldMPopup.isAccessible = true
+                val mPopup = fieldMPopup.get(popupMenu)
+                mPopup.javaClass.getDeclaredMethod("setForceShowIcon", Boolean::class.java)
+                        .invoke(mPopup, true)
+            }catch (e: Exception){
+                Log.e("Main", "Error showing icon menu, ", e)
+            }finally {
+                popupMenu.show()
+            }
+
+
             popupMenu.show()
         }
     }
