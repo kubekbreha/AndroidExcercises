@@ -1,6 +1,7 @@
 package com.nosense.grizzly.timer
 
 import android.os.Bundle
+import android.os.CountDownTimer
 import android.support.design.widget.Snackbar
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
@@ -10,15 +11,62 @@ import kotlinx.android.synthetic.main.activity_timer.*
 
 class TimerActivity : AppCompatActivity() {
 
+    enum class TimerState {
+        STOPPED, PAUSED, RUNNING
+    }
+
+    private lateinit var timer: CountDownTimer
+    private var timerLengthSeconds = 0L
+    private var timerState = TimerState.STOPPED
+
+    private var secondsRemaining = 0L
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_timer)
         setSupportActionBar(toolbar)
+        supportActionBar?.setIcon(R.drawable.ic_timer)
+        supportActionBar?.title = "  Timer"
 
-        fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show()
+
+        fab_start.setOnClickListener { v ->
+            startTimer()
+            timerState = TimerState.RUNNING
+            updateButtons()
         }
+
+        fab_pause.setOnClickListener { v ->
+            timer.cancel()
+            timerState = TimerState.PAUSED
+            updateButtons()
+        }
+
+        fab_stop.setOnClickListener { v ->
+            timer.cancel()
+            onTimerFinnished()
+        }
+    }
+
+
+    override fun onResume() {
+        super.onResume()
+        initTimer()
+
+        //todo: remove background timer, hide notification
+
+    }
+
+    override fun onPause() {
+        super.onPause()
+
+        if (timerState == TimerState.RUNNING) {
+            timer.cancel()
+            //todo: start background timer and show notification
+        } else if (timerState == TimerState.PAUSED) {
+            //todo: show notification
+
+        }
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
